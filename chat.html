@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tech bit Room</title>
+	<title>Kwitter Message page</title>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -12,30 +12,32 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
 <div class="container">
-<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+	<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="Logout()">Logout</button>
 	<center>
 		<h1 class="header">	
-			Tech bit		</h1>
+			Techno Bit	
 			<sup>
-				<img src="colorful-chat-logo_94202-402.jpg">
+				<img src="m2.png">
 			</sup>
-	
-		<h3 class="color_white" id="username"></h3>
-		<div class="form-group input_div_room_page">
-			<label>Add Room:</label>
-			<input type="text" id="room_name" class="form-control" placeholder="Room name">
-
-		</div>
-		<button class="btn btn-success" onclick="AddRow()">Add Room</button>
-		<h3 class="color_white">#TRENDINGROOMS</h3>
-		<div id="output"></div>
-	
+		</h1>
+		<div style="text-align: left;margin-bottom: 70px;" id="output"> </div>
 	</center>
 </div>
-<script src="Room.js"></script>
-<script async src="https://drv.tw/inc/wd.js"></script></body>
+
+<center>
+	<div class="input_div_message_page">
+		<label>Send:</label>
+		<input type="text" id="MSG" class="form-control" placeholder="Message">
+		<button class="btn btn-success" onclick="Send()">Send</button>
+	</div>
+</center>
+
+<script src="kwitter_page.js"></script>
+</body>
 </html>

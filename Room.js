@@ -39,5 +39,5 @@ function AddRow() {
 function redirdttoRoomName(name) {
       console.log(name);
       localStorage.setItem("room_name", name);
-      window.location = "kwitter_room.html"
+      window.location = "chat.html"
 }
